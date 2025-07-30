@@ -56,3 +56,31 @@ FAIL    flake   1.010s
 FAIL
 Test failed after 33 attempts
 ```
+
+## MCP Server Mode
+
+Flake can run as an MCP (Model Context Protocol) server, allowing agentic clients like Claude Code to use it as a tool to detect flaky tests in any Go project directory.
+
+### Usage
+
+Start flake in MCP server mode:
+
+```bash
+flake -mcp
+```
+
+This starts an MCP server that communicates over stdio, making it compatible with Claude Code and other MCP clients.
+
+### MCP Tool: `run_flake_tests`
+
+The MCP server provides a single tool:
+
+**Parameters:**
+- `directory` (required): Working directory where tests should be run
+- `attempts` (optional): Maximum number of test attempts (default: 100)
+
+**Returns:**
+- Success/failure status
+- Number of attempts made
+- Full test output (on failure)
+- Error messages if applicable
