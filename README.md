@@ -69,7 +69,7 @@ Start flake in MCP server mode:
 flake -mcp
 ```
 
-This starts an MCP server that communicates over stdio, making it compatible with Claude Code and other MCP clients.
+This starts an MCP server that communicates over stdio, making it compatible with MCP clients.
 
 ### MCP Tool: `run_flake_tests`
 
