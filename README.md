@@ -37,7 +37,8 @@ make install
 ```bash
 > flake
 Running 'go test -race -count=1 -v ./...' up to 100 times (use -h for help)
-.........
+.........^C 
+Interrupted after 9 attempts
 
 > flake -attempts 5000
 Running 'go test -race -count=1 -v ./...' up to 5000 times (use -h for help)
