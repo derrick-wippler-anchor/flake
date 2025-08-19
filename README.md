@@ -59,7 +59,7 @@ Test failed after 33 attempts
 
 ## MCP Server Mode
 
-Flake can run as an MCP (Model Context Protocol) server, allowing agentic clients like Claude Code to use it as a tool to detect flaky tests in any Go project directory.
+Flake can run as an MCP (Model Context Protocol) server, allowing agentic clients to use it as a tool to detect flaky tests in any Go project directory.
 
 ### Usage
 
